@@ -1,0 +1,69 @@
+:root {
+    --sidebar-color: rgb(243, 243, 243);
+    --text-color: #333;
+    --primary-color: #333;
+    --search-box-bg-color: #ffffff;
+    --search-icon-color: #888;
+    --search-input-color: #333;
+    --tran-05: all 0.5s ease;
+}
+
+.topbar {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--sidebar-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: var(--tran-05);
+}
+
+.topbar .topbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--search-box-bg-color);
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search-box .icon {
+    font-size: 1.2rem;
+    color: var(--search-icon-color);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+    margin-left: 5px;
+    color: var(--search-input-color);
+}
+
+.topbar .topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .topbar-right .mode-icon,
+.topbar .topbar-right .notification-icon,
+.topbar .topbar-right .profile-icon {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.body.dark .topbar {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,29 @@
+/* Ensure the body and home sections take full height */
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+/* Update the home section to use flexbox */
+.home {
+    flex: 1; /* This makes sure the home section takes all the available space */
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content {
+    flex: 1; /* This makes sure the content area takes all the available space */
+}
+
+.footer {
+    background: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}
